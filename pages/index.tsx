@@ -1,6 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import {PostCard, Categories, PostWidget} from '../components'
+
+const posts = [
+  {title: "blog testing", exerpt:"learn how to write and code a blog"},
+  {title: "blog with tailwind", exerpt:"write and code a blog with tailwind"}
+];
 
 const Home: NextPage = () => {
   return (
@@ -10,9 +15,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-
+        <div className='lg:col-span-8 col-span-1'>
+          {posts.map((post, index) => (
+            <div>
+              {post.title}
+              {post.exerpt}
+            </div>
+          ))}
+        </div>
+        <div className="lg:col-span-4 col-span-1">
+          <div className="lg:sticky relative top-8">
+            
+            </div>
+        </div>
       </div>
-
       
     </div>
   )
