@@ -1,9 +1,11 @@
 import React from 'react'
 
 const PostCard = () => {
-  return (
-    <div>PostCard</div>
-  )
+    return (
+        <div>
+            
+        </div>
+    )
 }
 
 export default PostCard
