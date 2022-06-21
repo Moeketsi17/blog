@@ -6,6 +6,7 @@ import { getAdjacentPosts } from '../services';
 const AdjacentPosts = ({ createdAt, slug }) => {
   const [adjacentPost, setAdjacentPost] = useState(null);
   const [dataLoaded, setDataLoaded] = useState(false);
+  
 
   useEffect(() => {
     getAdjacentPosts(createdAt, slug).then((result) => {
