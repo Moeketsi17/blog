@@ -5,7 +5,6 @@ import 'react-multi-carousel/lib/styles.css';
 import { FeaturedPostCard } from '../components';
 import { getFeaturedPosts } from '../services';
 
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
@@ -24,7 +23,6 @@ const responsive = {
     items: 1,
   },
 };
-
 
 const FeaturedPosts = () => {
   const [featuredPosts, setFeaturedPosts] = useState([]);
