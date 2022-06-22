@@ -29,4 +29,5 @@ const AdjacentPostCard = ({ post, position }) => (
   </>
 );
 
+
 export default AdjacentPostCard;
